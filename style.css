@@ -1,0 +1,440 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: rgba(20,173,255,0.1);
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-image: url("images/outdoor-dine-1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.nav__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8px;  
+}
+
+.nav__links {
+    display: none;
+}
+
+.nav__links.open {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .nav__links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .nav__menu__btn{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__bar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+}
+
+.nav__links li {
+    margin-right: 25px;
+}
+
+.nav__links a {
+  font-size: 18px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+  color: #007bff;
+}
+
+.logo img{
+    width: 90px;
+    height: 50px;
+    margin-top: 8px;
+}
+
+.nav__menu__btn {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn .nav__btn {
+    padding: 8px 10px;
+}
+
+.section__container p{
+    color: white;
+    margin-top: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section__container h1{
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.booking__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1px 10px;
+  margin-bottom: 0;
+  background-color: rgba(20,173,255,0.1);
+}
+
+.input__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.input__group span {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  vertical-align: middle;
+}
+
+.input__group input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input__group select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.input__group option {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input__group label {
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.input__btn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 28px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: 0.3s ease;
+}
+
+.input__btn button:hover {
+  background-color: #0056b3;
+}
+
+.ri-calendar-2-fill  {
+  color: rgba(25,25,255,0.8);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .input__group {
+      flex-direction: column;
+  }
+  .input__group input {
+      margin-top: 10px;
+      width: 100%;
+  }
+  .booking__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px
+  }
+  .input__btn button {
+    width: 100%;
+    padding: 8px 60px;
+  }
+  .input__group select{
+    width: 100%;
+    padding: 8px 65px;
+    margin-left: 14px;
+  }
+  .input__group:last-child {
+    margin-left: 1px;
+    left: 2%;
+  }
+}
+
+.about__container {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.about__content {
+  flex: 1;
+  padding: 20px;
+}
+
+.section__subheader {
+  font-size: 14px;
+  font-weight: 500;
+  color: #888;
+  text-align: center;
+}
+
+.section__header {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.section__description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.about__btn .btn {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about__btn .btn:hover {
+  background-color: #0056b3;
+}
+
+.about__container p, h1, h2{
+  color: #333;
+}
+
+.gallary {
+  margin: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 0;
+  align-self: center;
+  align-items: center;
+}
+
+#one {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #fff;
+}
+
+#two {
+  position: relative;
+  width: 100%;
+  height: 200%;
+  margin: 0;
+  top: 50%;
+  border: 1px solid #fff;
+}
+#three {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 768px){
+  .gallary {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+.button {
+  position: relative;
+}
+
+.button-overlay {
+  position: absolute;
+  bottom: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button-overlay:hover {
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid ghostwhite;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px 0;
+  
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section__description {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.footer__col {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer__col h4 {
+  font-size: 14px;
+  font-family: 'Poppin', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links li {
+  margin-bottom: 10px;
+}
+
+.footer__links a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer__socials a {
+  margin-right: 10px;
+}
+
+.footer__socials img {
+  width: 40px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer__bar {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.logo-f img {
+  width: 80px;
+}
+
+.cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .footer__socials img {
+    width: 28px;
+  }
+  .footer__links a {
+    font-size: 12px;
+  }
+  .footer__col h4 {
+    font-size: 12px;
+  }
+  .section__description {
+    font-size: 13px;
+  }
+  .logo-f img{
+    width: 60px;
+  }
+}
+
+.amenities h2{
+  text-align: center;
+}
